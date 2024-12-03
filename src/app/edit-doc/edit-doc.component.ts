@@ -26,4 +26,8 @@ export class EditDocComponent implements OnInit {
     this.docService.saveDoc(this.doc());
     this.saveEvent.emit(this.doc());
   }
+
+  valid(): boolean {
+    return this.doc().isValid();
+  }
 }

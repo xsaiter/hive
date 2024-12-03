@@ -21,5 +21,5 @@ export class AllDocsComponent implements OnInit {
       .then(data => this.dataSource.data = data);
   }
 
-  displayedColumns: string[] = ['id', 'name'];
+  displayedColumns: string[] = ['id', 'name', 'email'];
 }

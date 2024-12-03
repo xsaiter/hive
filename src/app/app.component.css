@@ -1,0 +1,8 @@
+.side {
+  float: left;
+  width: 10%;
+}
+
+.main {
+  margin-left: 180px;
+}

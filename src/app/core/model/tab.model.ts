@@ -48,10 +48,10 @@ export class EditDocTab extends Tab {
   }
 
   override getTitle(): string {
-    if (this.getId() > 0) {
-      return `create new doc`;
+    if (this.getId() == 0) {
+      return `Create New Doc`;
     } else {
-      return `${this.getId()} edit doc`;
+      return `Edit Doc ${this.getId()}`;
     }
   }
 

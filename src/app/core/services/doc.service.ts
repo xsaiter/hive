@@ -11,9 +11,6 @@ export class DocService {
 
   constructor() {
     this.lastId = 0;
-    this.docs.push(new Doc(1, "a"));
-    this.docs.push(new Doc(2, "b"));
-    this.docs.push(new Doc(3, "c"));
   }
 
   saveDoc(doc: Doc): number {
@@ -24,6 +21,7 @@ export class DocService {
       }
       existing.id = doc.id;
       existing.name = doc.name;
+      existing.email = doc.email;
     } else {
       this.lastId++;
       doc.id = this.lastId;

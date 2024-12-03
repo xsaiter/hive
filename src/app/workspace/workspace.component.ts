@@ -39,7 +39,7 @@ export class WorkspaceComponent implements OnInit, OnDestroy {
   }
 
   private addTabCreateNewDoc() {
-    var newDoc = new Doc(0, "");
+    var newDoc = new Doc(0, "", "");
     let tab = Tab.createEditDoc(newDoc);
     this.tabs.push(tab);
   }
